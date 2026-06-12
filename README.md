@@ -2,6 +2,12 @@
 
 Reviewer-facing design package for a dataset-agnostic, backward-compatible context-memory module.
 
+<p align="center">
+  <a href="./paper/main.pdf">
+    <img src="https://img.shields.io/badge/Open-Article-0B5FFF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Open PDF">
+  </a>
+</p>
+
 ## Core proposal
 
 The module introduces three operating modes:
