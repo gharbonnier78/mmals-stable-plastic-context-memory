@@ -1,0 +1,34 @@
+schema_version: mmals_context_memory_v1
+modes:
+  legacy:
+    description: exact historical posterior and blend
+    requires:
+      - q_single
+      - q_legacy_prototype
+    checkpoint_compatible: true
+  stable_plastic:
+    description: stable and plastic prototype banks with fixed fusion
+    requires:
+      - q_single
+      - q_stable
+      - q_plastic
+  adaptive:
+    description: adaptive fusion using entropy, margin, age, support, drift and disagreement
+    requires:
+      - q_single
+      - q_stable
+      - q_plastic
+      - metadata
+checkpoint_fields:
+  - schema_version
+  - operating_mode
+  - legacy_single_weight
+  - stable_bank
+  - plastic_bank
+  - support_count
+  - context_age
+  - dispersion
+  - drift
+  - fusion_gate_state
+  - representation_hash
+  - router_hash

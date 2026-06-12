@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this design package, please cite the design note."
+title: "Stable-Plastic Context Memory for Dataset-Agnostic Continual Routing in MMALS"
+type: article
+authors:
+  - family-names: Harbonnier
+    given-names: Guillaume
+year: 2026
+version: "design-note-2026-06-12"

@@ -1,0 +1,11 @@
+\begin{tabularx}{\linewidth}{@{}l p{0.24\linewidth} X@{}}
+\toprule
+Dataset family & Context structure & Design consequence \\
+\midrule
+MNIST / FashionMNIST overlap chain & Adjacent tasks share classes and ambiguity is legitimate. & Use soft teacher targets and permit guarded mixed-context posteriors; do not force hard prototype separation. \\
+Rotated / Permuted MNIST & Contexts reflect transformation or domain changes. & Stable anchors preserve transformation identity while the plastic bank adapts to drift. \\
+SplitCIFAR10 & Five disjoint class groups with a strong current result. & New module must be opt-in and pass strict non-regression gates before becoming default. \\
+SplitCIFAR100 & Ten large class groups with representation/readout limits. & Context redesign may help retention but cannot substitute for stronger representation and readout controls. \\
+CORe50 & Ten object groups with observed recency and host collapse. & Primary failure-driven test bed for stable-plastic memory and deployed-posterior distillation. \\
+\bottomrule
+\end{tabularx}

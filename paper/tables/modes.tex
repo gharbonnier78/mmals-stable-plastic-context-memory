@@ -1,0 +1,9 @@
+\begin{tabularx}{\linewidth}{@{}l p{0.22\linewidth} X X@{}}
+\toprule
+Mode & Purpose & Context posterior & Required guarantee \\
+\midrule
+\texttt{legacy} & Exact historical reproduction & Existing single/prototype posterior and fixed blend & Bitwise or tolerance-bounded equivalence on stored checkpoints and test fixtures. \\
+\texttt{stable\_plastic} & Controlled architectural ablation & Single encoder plus stable and plastic prototype banks under fixed fusion & No dataset-specific branches; all weights and updates exported. \\
+\texttt{adaptive} & Proposed deployable mode & Validation-calibrated fusion with disagreement and confident-collapse veto & Regression gates on MNIST family and SplitCIFAR10 before promotion. \\
+\bottomrule
+\end{tabularx}

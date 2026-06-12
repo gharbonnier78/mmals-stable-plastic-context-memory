@@ -1,0 +1,13 @@
+\begin{tabularx}{\linewidth}{@{}l X l@{}}
+\toprule
+Variant & Isolated question & Promotion role \\
+\midrule
+\texttt{legacy} & Can previous results be reproduced without old notebooks? & Mandatory reference \\
+\texttt{current\_ema} & Does the v2.3 EMA intervention reproduce its observed failure? & Failure control \\
+\texttt{adaptive\_blend\_only} & Was fixed prototype dominance the main mismatch? & Mechanism isolation \\
+\texttt{stable\_plastic\_only} & Do slow anchors prevent prototype drift? & Mechanism isolation \\
+\texttt{deployed\_posterior\_distill} & Does training the actual inference posterior retain old contexts? & Mechanism isolation \\
+\texttt{stable\_plastic\_plus\_distill} & Do the two corrections interact positively? & Candidate module \\
+\texttt{oracle\_blend\_diagnostic} & What is the achievable context ceiling without deployment leakage? & Diagnostic only \\
+\bottomrule
+\end{tabularx}
