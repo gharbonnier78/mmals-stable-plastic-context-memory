@@ -1,0 +1,6 @@
+variant,q_single_top1_acc,q_feature_top1_acc,q_latent_top1_acc,q_plastic_top1_acc,q_stable_top1_acc,context_top1_acc
+current_context_ema,0.422875,0.7,0.616,0.6192,0.6192,0.6208
+deployed_posterior_distill,0.41517499999999996,0.8064,0.6788000000000001,0.6852,0.6852,0.68455
+legacy_reference,0.411775,0.7872,0.648,0.6512,0.6512,0.6512
+oracle_blend_diagnostic,1.0,1.0,1.0,1.0,1.0,1.0
+stable_plastic_plus_distill,0.41945,0.7692,0.7,0.6968,0.6596,0.4788

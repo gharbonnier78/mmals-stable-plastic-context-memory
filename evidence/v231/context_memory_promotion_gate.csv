@@ -1,0 +1,4 @@
+variant,avg_acc_delta,oldest2_task_delta,oldest2_context_delta,recent2_task_delta,zero_recall_reduction,collapse_rate_reduction,passed,decision
+current_context_ema,-0.019749999999999976,-0.018250000000000002,0.0,-0.02687500000000001,-1.0,-0.08272499999999999,False,iterate_context_module
+deployed_posterior_distill,0.011699999999999988,0.0007499999999999972,0.032,-0.010624999999999996,1.0,0.046375,False,iterate_context_module
+stable_plastic_plus_distill,0.003175000000000011,0.04675,0.21037499999999998,-0.05225000000000002,3.0,0.00325000000000001,False,iterate_context_module

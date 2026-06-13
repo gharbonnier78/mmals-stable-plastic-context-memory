@@ -1,0 +1,6 @@
+variant,context_memory_mode,legacy_prototype_mode,legacy_ema_old_weight,stable_update_mode,stable_ema_old_weight,fixed_single_weight,fixed_plastic_weight,fixed_stable_weight,single_context_ce_weight,deployed_context_ce_weight,deployed_context_kl_weight,stable_anchor_weight,functional_distill_weight,extra_replay_weight,oldest_task_boost,collapse_veto,eval_oracle
+legacy_reference,legacy,refresh,0.0,frozen,0.995,0.1,0.35,0.55,0.0,0.0,0.0,0.0,1.0,0.0,1.0,False,False
+current_context_ema,legacy,ema,0.9,frozen,0.995,0.1,0.35,0.55,0.75,0.0,0.0,0.0,1.0,0.75,2.0,False,False
+deployed_posterior_distill,legacy,refresh,0.0,frozen,0.995,0.1,0.35,0.55,0.0,1.0,0.5,0.0,1.0,0.0,1.0,False,False
+stable_plastic_plus_distill,adaptive,refresh,0.0,slow_ema,0.995,0.1,0.35,0.55,0.0,1.0,0.5,0.25,1.0,0.0,1.0,True,False
+oracle_blend_diagnostic,legacy,refresh,0.0,frozen,0.995,0.1,0.35,0.55,0.0,0.0,0.0,0.0,1.0,0.0,1.0,False,True

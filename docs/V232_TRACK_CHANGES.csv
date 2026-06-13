@@ -1,0 +1,7 @@
+change_id,area,v231_behavior,v232_behavior,backward_compatibility
+V232-001,prototype evidence,batch-level Frechet posterior copied to every sample,per-sample diagonal-Gaussian posterior,legacy path unchanged
+V232-002,stable coordinates,stable statistics in drifting learned coordinates,stationary input-representation bank,dynamic bank retained as ablation
+V232-003,adaptive fusion,unconstrained softmax gate,prior initialization plus residual prior floor,fixed and legacy modes retained
+V232-004,training path,non-legacy main task used inherited legacy forward,non-legacy main task uses deployed posterior,legacy training path unchanged
+V232-005,reviewer gates,no branch-gap or fusion-collapse gate,"branch-gap, max-weight and stable-old-context gates",previous gates retained
+V232-006,persistence,optional compact checkpoints,versioned v2.3.2 compact manifest,default remains off
